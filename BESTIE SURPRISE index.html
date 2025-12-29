@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Bestie ❤️</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe6f0, #ffcccc);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+  }
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  h1 { color: #ff3366; }
+  p { color: #333; font-size: 18px; }
+  button {
+    padding: 10px 20px;
+    background: #ff6699;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button:hover { background: #ff3366; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Hey Bestie 😍</h1>
+  <p>I've missed you so much these past days 😔💖</p>
+  <p>Click the button for a little surprise!</p>
+  <button onclick="showSurprise()">Click Me ❤️</button>
+</div>
+
+<script>
+function showSurprise() {
+  alert("You're my favorite person in the world ❤️\nEven when we're far apart, you mean so much to me 😢💖");
+  document.body.style.background = "linear-gradient(135deg, #ffccff, #ff99cc)";
+  document.querySelector('.container').innerHTML = "<h1>Love you Bestie 😘</h1><p>Distance can't stop how much I care 💕</p>";
+}
+</script>
+</body>
+</html>
